@@ -7,9 +7,13 @@
 }
 
 header{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 25px;
+  background: url(screen/14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .title{
   display: flex;
@@ -19,6 +23,7 @@ header{
 }
 .title h1{
   padding-left: 10px;
+  color: black;
 }
 .title img{
   width: 100px;
@@ -30,6 +35,10 @@ header{
   justify-content: center;
   padding-left: 7px;
   padding-top: 10px;
+}
+.slogan p{
+  color: black;
+  font-size: 19px;
 }
 @media only screen and (max-width: 1000px) {
   .navBar ul{
@@ -52,7 +61,7 @@ header{
 .navBar{
   margin-top: 30px;
   padding: 30px 30px;
-  font-size: 19px;
+  font-size: 23px;
 }
 .navBar ul{
   display: flex;
@@ -135,9 +144,6 @@ body{
   padding-top: 15px;
 }
 */
-.Accueil-actualité{
-  height: 500px;
-}
 @media only screen and (max-width: 1000px) {
   .contenair-all{
     display: flex;
@@ -155,7 +161,7 @@ body{
 }
 .Accueil-title{
   width: 60%;
-  height: 800px;
+  height: 1200px;
 }
 .Accueil-title h2{
   color: black;
@@ -169,10 +175,18 @@ body{
   padding-bottom: 50px;
   color: #a4b0be;
 }
+.recherchBar{
+  display: flex;
+  justify-content: space-between;
+}
+.recherchBar input{
+  border-radius: 25px;
+  color: black
+}
 .Accueilbar{
   display: flex;
   justify-content: space-around;
-  padding-bottom: 75px;
+  padding-bottom: 70px;
 }
 .Accueilbar a{
   color: black;
@@ -222,7 +236,7 @@ body{
 }
 .Accueil-actualité{
   background-color: #ced6e0;
-  height: 800px;
+  height: 1200px;
   width: 30%;
   border-radius: 25px;
 }
@@ -262,4 +276,199 @@ footer{
 }
 .legal{
   padding-right: 40px;
+}
+
+.div {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.contener_slideshow {
+  width: 610px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.slid_1, .slid_2, .slid_3, .slid_4, .slid_5 {
+  position: absolute;
+  width: 610px;
+  height: 400px;
+}
+
+.slid_1 {
+  left: 0;
+}
+
+.slid_2 {
+  left: 610px;
+}
+
+.slid_3 {
+  left: 1220px;
+}
+
+.slid_4 {
+  left: 1830px;
+}
+
+.slid_5 {
+  left: 2440px;
+}
+
+.contener_slide {
+  width: 610px;
+  height: 400px;
+  left: 0px;
+  position: absolute;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: anim_slide;
+  -moz-animation-duration: 20s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-name: anim_slide;
+  -ms-animation-duration: 20s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-name: anim_slide;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-name: anim_slide;
+}
+
+@-webkit-keyframes anim_slide {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: -610px;
+  }
+  30% {
+    left: -610px;
+  }
+  40% {
+    left: -1220px;
+  }
+  50% {
+    left: -1220px;
+  }
+  60% {
+    left: -1830px;
+  }
+  70% {
+    left: -1830px;
+  }
+  80% {
+    left: -2440px;
+  }
+  90% {
+    left: -2440px;
+  }
+}
+
+@-moz-keyframes anim_slide {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: -610px;
+  }
+  30% {
+    left: -610px;
+  }
+  40% {
+    left: -1220px;
+  }
+  50% {
+    left: -1220px;
+  }
+  60% {
+    left: -1830px;
+  }
+  70% {
+    left: -1830px;
+  }
+  80% {
+    left: -2440px;
+  }
+  90% {
+    left: -2440px;
+  }
+}
+
+@-ms-keyframes anim_slide {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: -610px;
+  }
+  30% {
+    left: -610px;
+  }
+  40% {
+    left: -1220px;
+  }
+  50% {
+    left: -1220px;
+  }
+  60% {
+    left: -1830px;
+  }
+  70% {
+    left: -1830px;
+  }
+  80% {
+    left: -2440px;
+  }
+  90% {
+    left: -2440px;
+  }
+}
+
+@keyframes anim_slide {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: -610px;
+  }
+  30% {
+    left: -610px;
+  }
+  40% {
+    left: -1220px;
+  }
+  50% {
+    left: -1220px;
+  }
+  60% {
+    left: -1830px;
+  }
+  70% {
+    left: -1830px;
+  }
+  80% {
+    left: -2440px;
+  }
+  90% {
+    left: -2440px;
+  }
 }
